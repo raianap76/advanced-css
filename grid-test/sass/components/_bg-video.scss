@@ -1,0 +1,24 @@
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  overflow: hidden;
+  /**
+  A propriedade especifica se deve cortar o conteúdo ou adicionar barras de rolagem quando o 
+   conteúdo de um elemento é muito grande para caber na área especificada.overflow
+--A propriedade tem os seguintes valores:overflow
+   visible - Padrão. O transbordamento não está cortado. O conteúdo renderiza fora da caixa do elemento
+   hidden - O transbordamento é cortado, e o resto do conteúdo será invisível
+  **/
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    //similar aon background-size:cover
+    object-fit: cover;
+  }
+}
